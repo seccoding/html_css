@@ -1,0 +1,126 @@
+/*
+html의 모든 tag는 전부다 box model.
+*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: dimgray;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    /* margin: 10px 3px 20px 5px; */
+    /* margin: 0 300px; */
+    margin: 0 auto;
+    width: 600px;
+    height: 100%;
+}
+
+/*
+div {
+    background-color: white;
+}
+*/
+
+.header {
+    background-color: lightgray;
+    /* width: 500px;
+    border: 10px solid red;
+    padding: 30px;
+    margin: 100px; */
+}
+
+.header-logo {
+    background-color: yellow;
+}
+.header-category {
+    background-color: whitesmoke;
+}
+
+.content {
+    background-color: white;
+    height: calc(100% - 42px - 41px - 54px + 10px);
+}
+
+.content-article {
+    background-color: white;
+    /* padding: 10px; */
+    padding-bottom: 10px;
+    margin: 10px;
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+    margin-right: 0;
+    /*border: 1px solid lightgray;*/
+    border-bottom: 1px solid lightgray;
+}
+
+.content-article-title {
+    font-weight: normal;
+    color: black;
+    margin: 0;
+}
+
+.content-article-title-reply-count {
+    color: coral;
+    font-size: 15px;
+}
+
+.content-article-author-info-list {
+    padding: 0;
+    margin: 0;
+}
+
+.content-article-author {
+    color: brown;
+    display: inline-block;
+}
+
+.content-article-number {
+    color: gray;
+    display: inline-block;
+}
+
+.content-article-create-date {
+    color: gray;
+    display: inline-block;
+}
+
+.paginator {
+    background-color: lightgray;
+}
+
+.paginator-page-number {
+    background-color: aliceblue;
+    color: lightgray;
+    padding: 10px;
+}
+
+.paginator-active-page {
+    color: red;
+}
+
+.footer {
+    background-color: black;
+    color: gray;
+}
+
+.footer-button-area {}
+
+.footer-button-area-login-btn {
+    background-color: darkgray;
+    font-size: 20px;
+}
+
+.footer-copyright {}
