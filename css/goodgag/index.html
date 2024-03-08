@@ -15,11 +15,12 @@
                         <img src="./assets/logo.png" alt="고급유머 로고" />
                     </li>
                     <li class="header-logo-list-item">
-                        <img src="./assets/my.png" alt="고급유머 마이페이지" />
-                    </li>
-                    <li class="header-logo-list-item">
                         <img src="./assets/write.png" alt="고급유머 글 작성" />
                     </li>
+                    <li class="header-logo-list-item">
+                        <img src="./assets/my.png" alt="고급유머 마이페이지" />
+                    </li>
+                    <div class="clear-line"></div>
                 </ul>
             </div>
             <div class="header-category">
@@ -85,6 +86,22 @@
                     <li class="content-article-create-date">08:03</li>
                 </ul>
             </div>
+        </div>
+        <div class="search-area">
+            <form class="search-form">
+                <label class="search-title" for="search-type">검색종류</label>
+                <select class="search-input" id="search-type">
+                    <option>전체</option>
+                    <option>작성자</option>
+                    <option>내용</option>
+                    <option>작성자+내용</option>
+                    <option>글번호</option>
+                </select>
+
+                <label class="search-title" for="search-keyword">검색어</label>
+                <input class="search-input" id="search-keyword" />
+                <button class="search-button">검색</button>
+            </form>
         </div>
         <div class="paginator">
             <ul class="paginator-list">

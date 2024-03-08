@@ -48,10 +48,26 @@ div {
 .header-logo-list {
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 .header-logo-list-item {
-    display: inline-block;
+    /*display: inline-block;*/
+    /*float: right;*/
+    margin-right: 5px;
+}
+
+.header-logo-list-item:nth-child(3) {
+    float: right;
+}
+
+.header-logo-list-item:nth-child(2) {
+    float: right;
+}
+
+.header-logo-list-item:first-child {
+    float: left;
+    margin-left: 10px;
 }
 
 .header-category {
@@ -155,6 +171,41 @@ div {
     color: #DDDDDD;
 }
 
+.search-area {
+    padding: 10px;
+    text-align: center;
+}
+
+.search-form {
+    background-color: #F001;
+    padding: 10px;
+}
+
+.search-title {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    vertical-align: middle;
+}
+
+.search-input:focus {
+    outline: 0px;
+}
+
+.search-button {
+    background-color: #1a1af7;
+    padding: 8px;
+    border-radius: 3px;
+    border: 0px;
+    color: #FFF;
+    vertical-align: middle;
+}
+
 .paginator {
     background-color: lightgray;
     padding: 20px 0;
@@ -223,4 +274,8 @@ a:active {
 /*링크에 마우스를 올렸을 때 스타일 변경*/
 a:hover {
     font-weight: bold;
+}
+
+.clear-line {
+    clear: both;
 }
