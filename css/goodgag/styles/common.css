@@ -16,6 +16,17 @@ body {
     height: 100%;
 }
 
+.aside-menu {
+    background-color: #FFFC;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    display: none;
+}
+
 .go-to-top {
     position: fixed;
     bottom: 12.5rem;
@@ -73,6 +84,12 @@ div {
     margin: 100px; */
 }
 
+.hamburger {
+    width: 2.3rem;
+    vertical-align: middle;
+    display: none;
+}
+
 .header-logo {
     /*rgb(254, 213, 10);*/
     background-color:#fed60a;
@@ -80,7 +97,7 @@ div {
     position: relative;
 }
 
-.header-logo-list-item:nth-child(2) {
+.header-logo-list-item:nth-child(3) {
     position: absolute;
     /* right: 57px; */
     right: 3.56rem
