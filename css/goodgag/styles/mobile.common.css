@@ -46,8 +46,8 @@
         display: inline-block;
     }
 
-    .header-logo-list-item:nth-child(3),
-    .header-logo-list-item:nth-child(4) {
+    .header-logo > div:nth-child(3),
+    .header-logo > div:nth-child(4) {
         display: none;
     }
 

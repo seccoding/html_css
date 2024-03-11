@@ -97,17 +97,51 @@ div {
     position: relative;
 }
 
-.header-logo-list-item:nth-child(3) {
+.header-logo > div {
+    background-image: url('../assets/common.1px.png');
+}
+
+.header-logo > div:nth-child(1) {
+    width: 5px;
+    height: 30px;
+    background-position: -76px -30px;
+    vertical-align: middle;
+}
+
+.header-logo > div:nth-child(2) {
+    width: 82px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.header-logo > div:nth-child(3) {
+    width: 38px;
+    height: 29px;
+    background-position: 0 -38px;
     position: absolute;
-    /* right: 57px; */
+    right: 2.7rem;
+    top: 0.3rem;
+}
+
+.header-logo > div:nth-child(4) {
+    width: 33px;
+    height: 29px;
+    background-position: -41px -38px;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+}
+
+
+/* .header-logo-list-item:nth-child(3) {
+    position: absolute;
     right: 3.56rem
 }
 
 .header-logo-list-item:last-child {
     position: absolute;
-    /* right: 5px; */
     right: 0.31rem;
-}
+} */
 
 /* 이 방식이 정석이다.
 .header-logo-list-item {
@@ -381,4 +415,97 @@ a:hover {
 
 .clear-line {
     clear: both;
+}
+
+.regist-content {
+    margin-top: 6.07rem;
+    padding-top: 1rem;
+}
+
+.regist-form {
+    border: 1px solid #CCC;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.regist-form > .terms-agreement {
+    width: 100%;
+    height: 20rem;
+    overflow: auto;
+    border: 1px solid #aaa;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.regist-form input {
+    display: block;
+    margin: 1rem 2rem 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #aaa;
+}
+
+.regist-form input:focus {
+    outline: 0;
+}
+
+.regist-form input[type="checkbox"] {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #AAA;
+    border-radius: 0.5rem;
+    appearance: none;
+}
+
+.regist-form input[type="checkbox"]:checked {
+    /*background-color: #CCC;*/
+    background-image: url('../assets/checked.png');
+    background-size: 1.5rem 1rem;
+    background-position: -0.3rem;
+}
+
+.regist-form > button {
+    display: block;
+    margin: 1rem 2rem 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border: 0;
+    background-color:#fed60a;
+    color: #FFF;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #AAA;
+}
+
+.h-margin-16 {
+    margin: 1rem 0;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.w-half {
+    width: 49%;
 }
