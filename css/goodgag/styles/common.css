@@ -11,8 +11,26 @@ html {
 
 body {
     background-color: dimgray;
+    background-image: url("../assets/bg_tx.svg");
     margin: 0;
     height: 100%;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 12.5rem;
+    right: 15.625rem;
+    text-align: center;
+    background-color: #FFF6;
+    /* padding: 10px; */
+    padding: 0.65rem;
+    cursor: pointer;
+}
+
+.go-to-top p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
 
 .container {
@@ -22,7 +40,12 @@ body {
     /* margin: 10px 3px 20px 5px; */
     /* margin: 0 300px; */
     margin: 0 auto;
-    width: 600px;
+    /* width: 600px; */
+    width: 50%;
+    /* min-width: 344px; */
+    min-width: 21rem;
+    /* max-width: 600px; */
+    max-width: 37.5rem;
     height: 100%;
 }
 
@@ -33,6 +56,16 @@ div {
 */
 
 .header {
+    position: fixed;
+    /* width: 600px; */
+    width: 50%;
+    /* min-width: 344px; */
+    min-width: 21rem;
+    /* max-width: 600px; */
+    max-width: 37.5rem;
+    z-index: 2;
+    top: 0;
+
     background-color: lightgray;
     /* width: 500px;
     border: 10px solid red;
@@ -43,20 +76,46 @@ div {
 .header-logo {
     /*rgb(254, 213, 10);*/
     background-color:#fed60a;
+
+    position: relative;
 }
 
-.header-logo-list {
+.header-logo-list-item:nth-child(2) {
+    position: absolute;
+    /* right: 57px; */
+    right: 3.56rem
+}
+
+.header-logo-list-item:last-child {
+    position: absolute;
+    /* right: 5px; */
+    right: 0.31rem;
+}
+
+/* 이 방식이 정석이다.
+.header-logo-list-item {
+    display: inline-block;
+    width: 49%;
+}
+
+.header-logo-list-item:last-child {
+    text-align: right;
+} 
+*/
+
+/* .header-logo-list {
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
+} */
 
+/*
 .header-logo-list-item {
-    /*display: inline-block;*/
-    /*float: right;*/
     margin-right: 5px;
 }
+*/
 
+/*
 .header-logo-list-item:nth-child(3) {
     float: right;
 }
@@ -69,6 +128,7 @@ div {
     float: left;
     margin-left: 10px;
 }
+*/
 
 .header-category {
     background-color: whitesmoke;
@@ -84,7 +144,8 @@ div {
     display: inline-block;
     width: 40%;
     /* height: 40px; */
-    padding: 13px;
+    /* padding: 13px; */
+    padding: 0.8rem;
     /* font-style: italic; */
     /* text-align: center; */
 }
@@ -96,25 +157,32 @@ div {
 }
 
 .header-category-list-item:active {
-    font-size: 300%;
+    /* font-size: 300%; */
+    font-size: 3rem;
 }
 
 .header-category-active-item {
     font-weight: bold;
     color: red;
-    border-bottom: 3px solid red;
+    border-bottom: 0.18rem solid red;
 }
 
 .content {
+    /* margin-top: 97.27px; */
+    margin-top: 6.07rem;
+
     background-color: white;
-    height: calc(100% - 98px - 83px - 54px - 10px);
+    height: calc(100% - 6.125rem - 5.18rem - 3.375rem - 0.165rem);
 }
 
 .content-article {
+    position: relative;
+
     background-color: white;
     /* padding: 10px; */
-    padding-bottom: 10px;
-    margin: 10px;
+    /* padding-bottom: 10px; */
+    padding-bottom: 0.625rem;
+    margin: 0.625rem;
     /* margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -124,8 +192,25 @@ div {
     border-bottom: 1px solid lightgray;
 }
 
+.content-article:first-child {
+    margin-top: 0px;
+    padding-top: 0.625rem;
+}
+
 .content-article:last-child {
     border-bottom: 0px;
+}
+
+.best-article {
+    position: absolute;
+    top: 0;
+    right: 0.625rem;
+
+    background-color: #F00;
+    padding: 0.625rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFF;
 }
 
 .content-article-title {
@@ -136,7 +221,8 @@ div {
 
 .content-article-title-reply-count {
     color: coral;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 0.8rem;
 }
 
 .content-article-author-info-list {
@@ -151,7 +237,7 @@ div {
 
 .content-article-author::after {
     content: "|";
-    padding-left: 10px;
+    padding-left: 0.625rem;
     color: #DDDDDD;
 }
 
@@ -167,18 +253,18 @@ div {
 
 .content-article-create-date::before {
     content: "|";
-    padding-right: 10px;
+    padding-right: 0.625rem;
     color: #DDDDDD;
 }
 
 .search-area {
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
 }
 
 .search-form {
     background-color: #F001;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .search-title {
@@ -187,7 +273,7 @@ div {
 }
 
 .search-input {
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 3px;
     border: 1px solid #CCC;
     vertical-align: middle;
@@ -199,8 +285,8 @@ div {
 
 .search-button {
     background-color: #1a1af7;
-    padding: 8px;
-    border-radius: 3px;
+    padding: 0.5rem;
+    border-radius: 0.18rem;
     border: 0px;
     color: #FFF;
     vertical-align: middle;
@@ -208,7 +294,7 @@ div {
 
 .paginator {
     background-color: lightgray;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     /*Paginator의 자식 엘리먼트(태그)들을 (수평)가운데 정렬한다.*/
     text-align: center;
 }
@@ -222,10 +308,10 @@ div {
 .paginator-page-number {
     background-color: aliceblue;
     color: lightgray;
-    padding: 10px;
+    padding: 0.625rem;
     display: inline-block;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 0.31rem;
 }
 
 .paginator-active-page {
@@ -244,7 +330,8 @@ div {
 
 .footer-button-area-login-btn {
     background-color: darkgray;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
 }
 
 .footer-copyright {
