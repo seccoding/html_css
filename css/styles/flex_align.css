@@ -1,4 +1,8 @@
-h2, h3 {
+* {
+    box-sizing: border-box;
+}
+
+h2, h3, h4 {
     margin: 2rem 0 0 0;
 }
 
@@ -27,7 +31,7 @@ h2, h3 {
 .flex div {
     background-color: #fcad64;
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .row {
