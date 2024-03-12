@@ -10,10 +10,18 @@ h2, h3 {
     height: 40rem;
 }
 
+.w-320 {
+    width: 20rem;
+}
+
 .flex {
     display: flex;
     background-color: #CCC;
     padding: 1rem;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .flex div {
@@ -72,4 +80,28 @@ h2, h3 {
 
 .align-items-baseline {
     align-items: baseline;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.align-content-flex-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-around {
+    align-content: space-around;
 }

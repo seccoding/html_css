@@ -28,14 +28,12 @@
         top: 2rem;
     }
 
-    /* .header-category-list {
-        text-align: center;
-    } */
+    .header-category-list {
+        flex-direction: column;
+    }
 
     .header-category-list-item {
-        display: block;
-        width: 98%;
-        margin: 0 auto;
+        
     }
 
     .content {
@@ -50,9 +48,5 @@
     .header-logo > div:nth-child(4) {
         display: none;
     }
-
-    /* .aside-menu {
-        display: block;
-    } */
 
 }

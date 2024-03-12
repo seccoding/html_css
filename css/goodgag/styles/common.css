@@ -34,7 +34,6 @@ body {
     right: 15.625rem;
     text-align: center;
     background-color: #FFF6;
-    /* padding: 10px; */
     padding: 0.65rem;
     cursor: pointer;
 }
@@ -46,43 +45,25 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    /* margin-left: 300px;
-    margin-right: 300px; */
-    /* margin: 10px 3px 20px 5px; */
-    /* margin: 0 300px; */
     margin: 0 auto;
-    /* width: 600px; */
     width: 50%;
-    /* min-width: 344px; */
     min-width: 21rem;
-    /* max-width: 600px; */
     max-width: 37.5rem;
     height: 100%;
 }
 
-/*
-div {
-    background-color: white;
-}
-*/
-
 .header {
     position: fixed;
-    /* width: 600px; */
     width: 50%;
-    /* min-width: 344px; */
     min-width: 21rem;
-    /* max-width: 600px; */
     max-width: 37.5rem;
     z-index: 2;
     top: 0;
 
     background-color: lightgray;
-    /* width: 500px;
-    border: 10px solid red;
-    padding: 30px;
-    margin: 100px; */
 }
 
 .hamburger {
@@ -92,9 +73,9 @@ div {
 }
 
 .header-logo {
-    /*rgb(254, 213, 10);*/
+    display: flex;
+    align-items: center;
     background-color:#fed60a;
-
     position: relative;
 }
 
@@ -119,68 +100,19 @@ div {
     width: 38px;
     height: 29px;
     background-position: 0 -38px;
-    position: absolute;
+    /* position: absolute;
     right: 2.7rem;
-    top: 0.3rem;
+    top: 0.3rem; */
 }
 
 .header-logo > div:nth-child(4) {
     width: 33px;
     height: 29px;
     background-position: -41px -38px;
-    position: absolute;
+    /* position: absolute;
     right: 0.3rem;
-    top: 0.3rem;
+    top: 0.3rem; */
 }
-
-
-/* .header-logo-list-item:nth-child(3) {
-    position: absolute;
-    right: 3.56rem
-}
-
-.header-logo-list-item:last-child {
-    position: absolute;
-    right: 0.31rem;
-} */
-
-/* 이 방식이 정석이다.
-.header-logo-list-item {
-    display: inline-block;
-    width: 49%;
-}
-
-.header-logo-list-item:last-child {
-    text-align: right;
-} 
-*/
-
-/* .header-logo-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-} */
-
-/*
-.header-logo-list-item {
-    margin-right: 5px;
-}
-*/
-
-/*
-.header-logo-list-item:nth-child(3) {
-    float: right;
-}
-
-.header-logo-list-item:nth-child(2) {
-    float: right;
-}
-
-.header-logo-list-item:first-child {
-    float: left;
-    margin-left: 10px;
-}
-*/
 
 .header-category {
     background-color: whitesmoke;
@@ -195,14 +127,9 @@ div {
 }
 
 .header-category-list-item {
-    /* display: inline-block; */
     list-style-type: none;
     width: 40%;
-    /* height: 40px; */
-    /* padding: 13px; */
     padding: 0.8rem;
-    /* font-style: italic; */
-    /* text-align: center; */
 }
 
 .header-category-list-item:hover {
@@ -212,7 +139,6 @@ div {
 }
 
 .header-category-list-item:active {
-    /* font-size: 300%; */
     font-size: 3rem;
 }
 
@@ -223,7 +149,8 @@ div {
 }
 
 .content {
-    /* margin-top: 97.27px; */
+    display: flex;
+    flex-direction: column;
     margin-top: 6.07rem;
 
     background-color: white;
@@ -234,16 +161,8 @@ div {
     position: relative;
 
     background-color: white;
-    /* padding: 10px; */
-    /* padding-bottom: 10px; */
     padding-bottom: 0.625rem;
-    margin: 0.625rem;
-    /* margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px; */
-    margin-right: 0;
-    /*border: 1px solid lightgray;*/
+    margin: 0 0 0.625rem 0.625rem;
     border-bottom: 1px solid lightgray;
 }
 
@@ -275,7 +194,6 @@ div {
 
 .content-article-title-reply-count {
     color: coral;
-    /* font-size: 15px; */
     font-size: 0.8rem;
 }
 
@@ -293,29 +211,24 @@ div {
 
 .content-article-author {
     color: brown;
-    /* display: inline-block; */
 }
 
 .content-article-author::after {
     content: "|";
-    /* padding-left: 0.625rem; */
     padding: 0 0.625rem;
     color: #DDDDDD;
 }
 
 .content-article-number {
     color: gray;
-    /* display: inline-block; */
 }
 
 .content-article-create-date {
     color: gray;
-    /* display: inline-block; */
 }
 
 .content-article-create-date::before {
     content: "|";
-    /* padding-right: 0.625rem; */
     padding: 0 0.625rem;
     color: #DDDDDD;
 }
@@ -358,12 +271,10 @@ div {
 .paginator {
     background-color: lightgray;
     padding: 1.25rem 0;
-    /*Paginator의 자식 엘리먼트(태그)들을 (수평)가운데 정렬한다.*/
     text-align: center;
 }
 
 .paginator-list {
-    /* display: inline-block; */
     display: inline-flex;
     padding: 0;
     margin: 0;
@@ -395,20 +306,12 @@ div {
 
 .footer-button-area-login-btn {
     background-color: darkgray;
-    /* font-size: 20px; */
     font-size: 1.2rem;
 }
 
 .footer-copyright {
     text-align: center;
 }
-
-/*
-a {
-    color: #333333;
-    text-decoration: none;
-}
-*/
 
 /*링크 스타일을 변경*/
 a:link {
@@ -477,7 +380,6 @@ a:hover {
 }
 
 .regist-form input[type="checkbox"]:checked {
-    /*background-color: #CCC;*/
     background-image: url('../assets/checked.png');
     background-size: 1.5rem 1rem;
     background-position: -0.3rem;
