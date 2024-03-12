@@ -190,10 +190,13 @@ div {
     padding: 0;
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .header-category-list-item {
-    display: inline-block;
+    /* display: inline-block; */
+    list-style-type: none;
     width: 40%;
     /* height: 40px; */
     /* padding: 13px; */
@@ -281,32 +284,39 @@ div {
     margin: 0;
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
+    display: flex;
+}
+
+.content-article-author-info-list li {
+    list-style-type: none;
 }
 
 .content-article-author {
     color: brown;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .content-article-author::after {
     content: "|";
-    padding-left: 0.625rem;
+    /* padding-left: 0.625rem; */
+    padding: 0 0.625rem;
     color: #DDDDDD;
 }
 
 .content-article-number {
     color: gray;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .content-article-create-date {
     color: gray;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .content-article-create-date::before {
     content: "|";
-    padding-right: 0.625rem;
+    /* padding-right: 0.625rem; */
+    padding: 0 0.625rem;
     color: #DDDDDD;
 }
 
@@ -353,7 +363,8 @@ div {
 }
 
 .paginator-list {
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline-flex;
     padding: 0;
     margin: 0;
 }
@@ -365,6 +376,7 @@ div {
     display: inline-block;
     border: 1px solid gray;
     border-radius: 0.31rem;
+    margin: 0 0.325rem;
 }
 
 .paginator-active-page {
