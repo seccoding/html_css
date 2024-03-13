@@ -5,11 +5,16 @@ html의 모든 tag는 전부다 box model.
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: dimgray;
     background-image: url("../assets/bg_tx.svg");
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
+    height: 100%;
 }
 
 .aside-menu {
@@ -44,7 +49,7 @@ body {
     flex-direction: column;
     background-color: white;
     margin: 0 auto;
-    width: 50%;
+    width: 600px;
     min-width: 21rem;
     max-width: 37.5rem;
     height: 100%;
@@ -56,7 +61,6 @@ body {
     max-width: 37.5rem;
     z-index: 2;
     top: 0;
-
     background-color: lightgray;
 }
 
@@ -235,11 +239,16 @@ body {
 .search-area {
     padding: 0.625rem;
     text-align: center;
+    background-color: #FFF;
 }
 
 .search-form {
     background-color: #F001;
     padding: 0.625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 4rem 1fr) minmax(3rem, auto);
+    align-items: center;
+    gap: 0.3rem;
 }
 
 .search-title {

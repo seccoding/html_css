@@ -15,6 +15,16 @@
 }
 
 .grid > div:hover {
+    img {
+        transform: scale(1.1, 1.1);
+        /* border: 3px solid #CCC; */
+        box-shadow: 0px 1px 10px #00F;
+        border-radius: 1rem;
+    }
+}
+
+
+.grid > div:hover {
     border: 1px solid #7373fa;
 
     .default {
