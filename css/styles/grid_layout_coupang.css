@@ -14,6 +14,10 @@
     border: 1px solid #ccc;
 }
 
+.grid > div > img {
+    transition: transform 0.3s;
+}
+
 .grid > div:hover {
     img {
         transform: scale(1.1, 1.1);
@@ -23,16 +27,15 @@
     }
 }
 
-
 .grid > div:hover {
     border: 1px solid #7373fa;
 
     .default {
-        display: none;
+        opacity: 0;
     }
 
     .hover {
-        display: block;
+        opacity: 1;
     }
 }
 
@@ -42,16 +45,19 @@ img {
 }
 
 .default, .hover {
+    opacity: 1;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
     background-color: #0003;
     color: #fff;
     padding: 0.8rem 1rem;
+    transition: opacity 0.5s;
 }
 
 .hover {
-    display: none;
+    /* display: none; */
+    opacity: 0;
     background-color: #7373fa;
 }
 
